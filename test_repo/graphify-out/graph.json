@@ -1,0 +1,134 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "app_auth_authservice",
+      "label": "AuthService",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": "authservice",
+      "source_file": "app/auth.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_auth_authservice_find_user",
+      "label": ".find_user()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": ".find_user()",
+      "source_file": "app/auth.py",
+      "source_location": "L3"
+    },
+    {
+      "id": "app_auth_authservice_login",
+      "label": ".login()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": ".login()",
+      "source_file": "app/auth.py",
+      "source_location": "L12"
+    },
+    {
+      "id": "app_auth_authservice_verify_password",
+      "label": ".verify_password()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": ".verify_password()",
+      "source_file": "app/auth.py",
+      "source_location": "L9"
+    },
+    {
+      "id": "app_auth",
+      "label": "auth.py",
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": "auth.py",
+      "source_file": "app/auth.py",
+      "source_location": "L1"
+    }
+  ],
+  "links": [
+    {
+      "source": "app_auth_authservice_login",
+      "target": "app_auth_authservice_find_user",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "app/auth.py",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "app_auth_authservice_login",
+      "target": "app_auth_authservice_verify_password",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "app/auth.py",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "app_auth",
+      "target": "app_auth_authservice",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/auth.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_auth_authservice",
+      "target": "app_auth_authservice_login",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/auth.py",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "app_auth_authservice",
+      "target": "app_auth_authservice_find_user",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/auth.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_auth_authservice",
+      "target": "app_auth_authservice_verify_password",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/auth.py",
+      "source_location": "L9",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "6552d73dc213359662906e00eeadab465965c366"
+}

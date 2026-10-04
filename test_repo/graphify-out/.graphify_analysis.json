@@ -1,0 +1,26 @@
+{
+  "communities": {
+    "0": [
+      "app_auth",
+      "app_auth_authservice",
+      "app_auth_authservice_find_user",
+      "app_auth_authservice_login",
+      "app_auth_authservice_verify_password"
+    ]
+  },
+  "cohesion": {
+    "0": 0.6
+  },
+  "gods": [
+    {
+      "id": "app_auth_authservice",
+      "label": "AuthService",
+      "degree": 4
+    }
+  ],
+  "surprises": [],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}
